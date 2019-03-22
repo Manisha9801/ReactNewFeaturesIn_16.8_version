@@ -5,6 +5,7 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import MultipleUseStateExample from './MultipleUseStateExample/MultipleUseStateExample' 
 import CleanUpWithUseEffect from './CleanUpWithUseEffect/CleanUpWithUseEffect';
+import ReactMemo from './ReactMemo/ReactMemo';
 
 //For single use of useState() hook example
 // ReactDOM.render(<App />, document.getElementById('root'));
@@ -13,7 +14,10 @@ import CleanUpWithUseEffect from './CleanUpWithUseEffect/CleanUpWithUseEffect';
 // ReactDOM.render(<MultipleUseStateExample />, document.getElementById('root'));
 
 //For cleanup example using useEffect();
-ReactDOM.render(<CleanUpWithUseEffect />, document.getElementById('root'));
+// ReactDOM.render(<CleanUpWithUseEffect />, document.getElementById('root'));
+
+//For React Memo example to see the optimization of a functional component
+ReactDOM.render(<ReactMemo />, document.getElementById('root'));
 
 
 // If you want your app to work offline and load faster, you can change

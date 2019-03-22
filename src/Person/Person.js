@@ -1,4 +1,4 @@
-import React , {useEffect} from 'react';
+import React , {useEffect, memo} from 'react';
 
 const person = (props) => {
 
@@ -22,4 +22,4 @@ const person = (props) => {
     );
 }
 
-export default person;
+export default memo(person);
